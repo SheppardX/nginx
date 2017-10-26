@@ -9,4 +9,6 @@ ADD shopware.conf /etc/nginx/global/shopware.conf
 
 ADD run.sh /run.sh
 
+RUN chmod 755 /run.sh
+
 CMD ["/run.sh"]
